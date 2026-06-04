@@ -1,6 +1,6 @@
-	Dhansiri : 5000 : 3
+	Kameng : 5000 : 3
 
-	Disang : 5000 : 4
+	Barak : 5000 : 4
 
 	Lohit : 5000 : 3
 
