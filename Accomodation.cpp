@@ -90,14 +90,14 @@ public:
 }
 
 int main() {
-    Hostel Dhansiri("Dhansiri", 5000, 3);
-    Hostel Disang("Disang", 5000, 4);
+    Hostel Kameng("Kameng", 5000, 3);
+    Hostel Barak("Barak", 5000, 4);
     Hostel Lohit("Lohit", 5000, 3);
     Hostel Kapili("Kapili", 5000, 2);
 
     ofstream out("Hostels.txt");
-    out << "\t" << Dhansiri.getName() << " : " << Dhansiri.getRent() << " : " << Dhansiri.getBed() << endl << endl;
-    out << "\t" << Disang.getName() << " : " << Disang.getRent() << " : " << Disang.getBed() << endl << endl;
+    out << "\t" << Kameng.getName() << " : " << Kameng.getRent() << " : " << Kameng.getBed() << endl << endl;
+    out << "\t" << Barak.getName() << " : " << Barak.getRent() << " : " << Barak.getBed() << endl << endl;
     out << "\t" << Lohit.getName() << " : " << Lohit.getRent() << " : " << Lohit.getBed() << endl << endl;
     out << "\t" << Kapili.getName() << " : " << Kapili.getRent() << " : " << Kapili.getBed() << endl << endl;
     cout << "Hostel Data Saved!" << endl;
@@ -125,8 +125,8 @@ int main() {
         }
 
         cout << "\tWhich Hostel Do you want to Choose?" << endl;
-        cout << "\t1.Dhansiri (" << Dhansiri.getBed() << " rooms available)" << endl;
-        cout << "\t2.Disang   (" << Disang.getBed() << " rooms available)" << endl;
+        cout << "\t1.Kameng (" << kameng.getBed() << " rooms available)" << endl;
+        cout << "\t2.Barak   (" << Barak.getBed() << " rooms available)" << endl;
         cout << "\t3.Lohit    (" << Lohit.getBed() << " rooms available)" << endl;
         cout << "\t4.Kapili   (" << Kapili.getBed() << " rooms available)" << endl;
 
@@ -135,9 +135,9 @@ int main() {
         switch (opt) {
     case 1:
         system("cls");
-        cout<<"DHANSIRI RESERVATION!"<<endl;
-        if (Dhansiri.getBed() > 0) {
-            reserveBed(Dhansiri, "Dhansiri", s);
+        cout<<"KAMENG RESERVATION!"<<endl;
+        if (Kameng.getBed() > 0) {
+            reserveBed(Kameng, "Kameng", s);
         } else {
             cout << "\tSorry, No Bed Available!" << endl;
             Sleep(5000);
@@ -146,9 +146,9 @@ int main() {
 
     case 2:
         system("cls");
-        cout<<"DISANG RESERVATION!"<<endl;
-        if (Disang.getBed() > 0) {
-            reserveBed(Disang, "Disang", s);
+        cout<<"BARAK RESERVATION!"<<endl;
+        if (Barak.getBed() > 0) {
+            reserveBed(Barak, "Barak", s);
         } else {
             cout << "\tSorry, No Bed Available!" << endl;
             Sleep(5000);
